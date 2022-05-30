@@ -1,0 +1,74 @@
+body {
+    background-color: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.traffic {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100px;
+    height: 200px;
+    background-color: black;
+}
+
+.traffic-red {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(149, 2, 2);
+    animation: ring1 2s ease-in-out 1s;
+
+}
+
+.traffic-yellow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 0, 0.6);
+    animation: ring2 2s ease-in-out 4s;
+
+}
+
+.traffic-green {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 128, 0, 0.735);
+    animation: ring3 2s ease-in-out 7s;
+    animation-timeline: 7s;
+
+}
+
+@keyframes ring1 {
+    0% {
+        background-color: rgb(149, 2, 2);
+
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+@keyframes ring2 {
+    0% {
+        background-color: rgba(255, 255, 0, 0.6);
+
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+
+@keyframes ring3 {
+    0% {
+        background-color: rgba(0, 128, 0, 0.735);
+
+    }
+    100%{
+        background-color: greenyellow;
+    }
+}
